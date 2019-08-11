@@ -1,0 +1,1 @@
+webapp: poetry run python -m service_pingpong
