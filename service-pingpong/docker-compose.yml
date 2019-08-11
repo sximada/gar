@@ -1,0 +1,8 @@
+version: "3"
+
+services:
+  service-pingpong:
+    image: service-pingpong
+    build: .
+    ports:
+      - "5000:5000"
