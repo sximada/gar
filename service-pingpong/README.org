@@ -1,0 +1,25 @@
+#+TITLE: service-pingpong
+
+HTTP server that just returns PONG.
+
+#+BEGIN_SRC restclient :results scalar :exports both
+GET http://localhost:5000/ping
+#+END_SRC
+
+#+RESULTS:
+#+BEGIN_SRC html
+PONG
+<!-- GET http://localhost:5000/ping -->
+<!-- HTTP/1.0 200 OK -->
+<!-- Content-Type: text/html; charset=utf-8 -->
+<!-- Content-Length: 4 -->
+<!-- Server: Werkzeug/0.15.5 Python/3.8.0b3 -->
+<!-- Date: Sun, 11 Aug 2019 10:05:25 GMT -->
+<!-- Request duration: 0.032504s -->
+#+END_SRC
+
+* Start
+
+#+BEGIN_SRC shell
+docker-compose up
+#+END_SRC
