@@ -1,0 +1,14 @@
+.dockerignore
+.gitignore
+.ruby-version
+Dockerfile
+Procfile
+README.org
+Rakefile
+docker-compose.yml
+log
+public
+storage
+test
+tmp
+vendor

@@ -1,0 +1,65 @@
+#+TITLE: Ruby On Rails Hello World Tutorial
+
+* Start server
+** Foreman
+
+https://github.com/ddollar/foreman
+
+#+BEGIN_EXAMPLE
+foreman start
+#+END_EXAMPLE
+
+#+BEGIN_SRC restclient :exports both
+GET http://127.0.0.1:3000/
+#+END_SRC
+
+#+RESULTS:
+#+BEGIN_SRC html
+Hello World!
+<!-- GET http://127.0.0.1:3000/ -->
+<!-- HTTP/1.1 200 OK -->
+<!-- X-Frame-Options: SAMEORIGIN -->
+<!-- X-XSS-Protection: 1; mode=block -->
+<!-- X-Content-Type-Options: nosniff -->
+<!-- X-Download-Options: noopen -->
+<!-- X-Permitted-Cross-Domain-Policies: none -->
+<!-- Referrer-Policy: strict-origin-when-cross-origin -->
+<!-- Content-Type: text/html; charset=utf-8 -->
+<!-- ETag: W/"7f83b1657ff1fc53b92dc18148a1d65d" -->
+<!-- Cache-Control: max-age=0, private, must-revalidate -->
+<!-- X-Request-Id: 858ba18f-e0e5-4b35-82f6-57183aa181d9 -->
+<!-- X-Runtime: 0.014635 -->
+<!-- Transfer-Encoding: chunked -->
+<!-- Request duration: 0.094213s -->
+#+END_SRC
+
+
+** Use docker-compose
+
+#+BEGIN_EXAMPLE
+docker-compose up
+#+END_EXAMPLE
+
+#+BEGIN_SRC restclient :exports both
+GET http://127.0.0.1:3000/
+#+END_SRC
+
+#+RESULTS:
+#+BEGIN_SRC html
+Hello World!
+<!-- GET http://127.0.0.1:3000/ -->
+<!-- HTTP/1.1 200 OK -->
+<!-- X-Frame-Options: SAMEORIGIN -->
+<!-- X-XSS-Protection: 1; mode=block -->
+<!-- X-Content-Type-Options: nosniff -->
+<!-- X-Download-Options: noopen -->
+<!-- X-Permitted-Cross-Domain-Policies: none -->
+<!-- Referrer-Policy: strict-origin-when-cross-origin -->
+<!-- Content-Type: text/html; charset=utf-8 -->
+<!-- ETag: W/"7f83b1657ff1fc53b92dc18148a1d65d" -->
+<!-- Cache-Control: max-age=0, private, must-revalidate -->
+<!-- X-Request-Id: 7e98d7a3-7937-463d-b2b0-1f39c6dc6663 -->
+<!-- X-Runtime: 0.016561 -->
+<!-- Transfer-Encoding: chunked -->
+<!-- Request duration: 0.022082s -->
+#+END_SRC
